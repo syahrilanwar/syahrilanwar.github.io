@@ -131,7 +131,7 @@ export default function Home() {
       {/* content > introduction */}
       <section data-aos="fade-up" className="min-h-screen bg-transparent">
         <div className="grid grid-cols-11 w-full">
-          <div className="col bg-blue-700 h-4"></div>
+          <div className="col bg-blue-700 h-3"></div>
           <div className="col bg-blue-600"></div>
           <div className="col bg-blue-500"></div>
           <div className="col bg-blue-400"></div>
