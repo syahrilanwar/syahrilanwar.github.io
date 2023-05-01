@@ -13,7 +13,7 @@ export default function Home() {
     AOS.init();
   });
   return (
-    <main className={`min-h-screen bg-white ` + fontFamily.className}>
+    <main className={`min-h-screen over bg-white ` + fontFamily.className}>
       {/* content > greeting */}
       <section className="min-h-screen flex bg-transparent">
         <div
@@ -30,7 +30,7 @@ export default function Home() {
             backgroundImage: `url(${backgroundPattern1.src})`,
           }}
         />
-        <div className="m-auto z-20">
+        <div className="m-auto z-20 min-w-full">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <div className="flex">
               <Image
@@ -44,12 +44,8 @@ export default function Home() {
             <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
               <div>Syahril Anwar</div>
             </h1>
-            <p className="mb-8 text-lg font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48 w-full">
+            <p className="mb-8 text-lg font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48 ">
               <TypeAnimation
-                style={{
-                  width: "800px",
-                  display: "block",
-                }}
                 sequence={[
                   500, // Waits 0.5s
                   "Hey I wrote code and it became something.", // Types 'One'
