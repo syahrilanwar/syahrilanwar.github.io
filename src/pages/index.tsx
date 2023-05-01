@@ -1,5 +1,5 @@
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["cyrillic"] });
+import { Plus_Jakarta_Sans } from "next/font/google";
+const fontFamily = Plus_Jakarta_Sans({ subsets: ["latin"] });
 import AOS from "aos";
 import "aos/dist/aos.css";
 import avatarImage from "public/images/avatar-1.jpg";
@@ -12,7 +12,7 @@ export default function Home() {
     AOS.init();
   });
   return (
-    <main className={`min-h-screen bg-white ` + inter.className}>
+    <main className={`min-h-screen bg-white ` + fontFamily.className}>
       {/* content > greeting */}
       <section className="min-h-screen flex bg-transparent">
         <div
