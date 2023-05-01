@@ -43,7 +43,7 @@ export default function Home() {
                 className="mx-auto mb-6 rounded-full"
               />
             </div>
-            <h1 className="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
+            <h1 className="mb-4 text-3xl font-semibold tracking-wide leading-none text-gray-900 md:text-4xl lg:text-5xl">
               <div>Syahril Anwar</div>
             </h1>
             <p className="mb-8 text-lg font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48 ">
@@ -148,7 +148,7 @@ export default function Home() {
         <div className="my-4 mx-auto">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
             <div className="flex flex-col justify-center">
-              <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
+              <h1 className="mb-4 text-3xl font-semibold tracking-wide leading-none text-gray-900 md:text-4xl lg:text-5xl">
                 Me
               </h1>
               <p className="mb-8 text-lg font-normal text-gray-600 lg:text-xl">
@@ -190,7 +190,7 @@ export default function Home() {
         </div>
         <div className="m-auto z-20">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16">
-            <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl">
+            <h1 className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
               <div>Skill</div>
             </h1>
             <p className="text-lg font-normal text-gray-600 lg:text-xl sm:px-16 lg:px-48">
