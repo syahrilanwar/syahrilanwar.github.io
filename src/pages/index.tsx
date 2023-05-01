@@ -18,6 +18,7 @@ export default function Home() {
       <section className="min-h-screen flex bg-transparent">
         <div
           data-aos="fade-down"
+          data-aos-duration="800"
           className="bg-no-repeat bg-fixed h-screen w-full absolute"
           style={{
             backgroundImage: `url(${backgroundPattern1.src})`,
@@ -25,6 +26,7 @@ export default function Home() {
         />
         <div
           data-aos="fade-up"
+          data-aos-duration="800"
           className="hidden md:block bg-no-repeat bg-right bg-fixed h-screen w-full absolute"
           style={{
             backgroundImage: `url(${backgroundPattern1.src})`,
