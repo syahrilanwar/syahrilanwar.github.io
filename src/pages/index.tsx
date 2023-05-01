@@ -136,67 +136,56 @@ export default function Home() {
           <div
             data-aos="fade-up"
             data-aos-duration="700"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-700 h-3"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="750"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-600"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-500"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="850"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-400"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="900"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-300"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="950"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-200"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="900"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-300"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="850"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-400"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="800"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-500"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="750"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-600"
           ></div>
           <div
             data-aos="fade-up"
             data-aos-duration="700"
-            data-aos-easing="ease-in-sine"
             className="col bg-blue-700"
           ></div>
         </div>
