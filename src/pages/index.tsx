@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { TypeAnimation } from "react-type-animation";
 const fontFamily = Plus_Jakarta_Sans({ subsets: ["latin"] });
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,14 +17,14 @@ export default function Home() {
       {/* content > greeting */}
       <section className="min-h-screen flex bg-transparent">
         <div
-          data-aos="fade-right"
+          data-aos="fade-down"
           className="bg-no-repeat bg-fixed h-screen w-full absolute"
           style={{
             backgroundImage: `url(${backgroundPattern1.src})`,
           }}
         />
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="hidden md:block bg-no-repeat bg-right bg-fixed h-screen w-full absolute"
           style={{
             backgroundImage: `url(${backgroundPattern1.src})`,
@@ -43,8 +44,21 @@ export default function Home() {
             <h1 className="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
               <div>Syahril Anwar</div>
             </h1>
-            <p className="mb-8 text-lg font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48">
-              Hey I wrote code and it became something.
+            <p className="mb-8 text-lg font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48 w-full">
+              <TypeAnimation
+                style={{
+                  width: "800px",
+                  display: "block",
+                }}
+                sequence={[
+                  500, // Waits 0.5s
+                  "Hey I wrote code and it became something.", // Types 'One'
+                  1000, // Waits 1s
+                ]}
+                speed={70}
+                repeat={Infinity}
+                cursor={true}
+              />
             </p>
             <div className="grid grid-cols-4 items-center gap:12 mt-6 max-w-lg mx-auto">
               <div className="col-span-1">
