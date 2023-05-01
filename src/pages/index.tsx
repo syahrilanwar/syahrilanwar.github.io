@@ -133,17 +133,72 @@ export default function Home() {
       {/* content > introduction */}
       <section data-aos="fade-up" className="min-h-screen bg-transparent">
         <div className="grid grid-cols-11 w-full">
-          <div className="col bg-blue-700 h-3"></div>
-          <div className="col bg-blue-600"></div>
-          <div className="col bg-blue-500"></div>
-          <div className="col bg-blue-400"></div>
-          <div className="col bg-blue-300"></div>
-          <div className="col bg-blue-200"></div>
-          <div className="col bg-blue-300"></div>
-          <div className="col bg-blue-400"></div>
-          <div className="col bg-blue-500"></div>
-          <div className="col bg-blue-600"></div>
-          <div className="col bg-blue-700"></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-700 h-3"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-600"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-500"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-400"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-300"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="950"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-200"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-300"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-400"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-500"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-600"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            className="col bg-blue-700"
+          ></div>
         </div>
         <div className="my-4 mx-auto">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
