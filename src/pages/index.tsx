@@ -34,8 +34,8 @@ export default function Home() {
             <div className="flex">
               <Image
                 src={avatarImage}
-                width={150}
-                height={150}
+                width={200}
+                height={200}
                 alt=""
                 className="mx-auto mb-6 rounded-full"
               />
