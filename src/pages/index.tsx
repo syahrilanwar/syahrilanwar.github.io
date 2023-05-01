@@ -46,10 +46,10 @@ export default function Home() {
             <p className="mb-8 text-lg font-normal text-gray-600 lg:text-2xl sm:px-16 lg:px-48">
               Hey I wrote code and it became something.
             </p>
-            <div className="grid grid-cols-4 items-center gap:12 lg:gap-8 mt-6 max-w-lg mx-auto">
+            <div className="grid grid-cols-4 items-center gap:12 mt-6 max-w-lg mx-auto">
               <div className="col-span-1">
                 <a target="_blank" href="https://twitter.com/syahrilanwardev">
-                  <div className="group mx-auto w-14 h-14 transition duration-200">
+                  <div className="group mx-auto flex w-14 h-14 transition duration-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <div className="col-span-1">
                 <a target="_blank" href="mailto:syahrilanwar.dev@gmail.com">
-                  <div className="group mx-auto w-14 h-14 transition duration-200">
+                  <div className="group mx-auto flex w-14 h-14 transition duration-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -84,7 +84,7 @@ export default function Home() {
                   target="_blank"
                   href="https://www.linkedin.com/in/syahril-anwar-9872131b8/"
                 >
-                  <div className="group mx-auto w-14 h-14 transition duration-200">
+                  <div className="group mx-auto flex w-14 h-14 transition duration-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
               <div className="col-span-1">
                 <a target="_blank" href="https://github.com/syahrilanwar">
-                  <div className="group mx-auto w-14 h-14 transition duration-200">
+                  <div className="group mx-auto flex w-14 h-14 transition duration-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -159,7 +159,10 @@ export default function Home() {
         </div>
       </section>
       {/* content > skill */}
-      <section data-aos="fade-up" className="hidden min-h-screen bg-transparent">
+      <section
+        data-aos="fade-up"
+        className="hidden min-h-screen bg-transparent"
+      >
         <div className="grid grid-cols-11 w-full">
           <div className="col bg-red-700 h-3"></div>
           <div className="col bg-red-600"></div>
