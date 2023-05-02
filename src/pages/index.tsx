@@ -12,6 +12,25 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
   });
+  const frontendDeveloperSkills = [
+    "HTML5",
+    "CSS",
+    "Tailwind CSS",
+    "Bootstrap CSS",
+    "Javascript",
+    "Vue JS",
+    "React JS",
+    "Next JS",
+  ];
+  const backendDeveloperSkills = [
+    "PHP",
+    "OOP",
+    "Laravel",
+    "SQL",
+    "MYSQL",
+    "PostgreSQL",
+    "REST API",
+  ];
   return (
     <main className={`min-h-screen over bg-white ` + fontFamily.className}>
       {/* content > greeting */}
@@ -132,6 +151,7 @@ export default function Home() {
       </section>
       {/* content > introduction */}
       <section data-aos="fade-up" className="min-h-screen bg-transparent">
+        {/* border */}
         <div className="grid grid-cols-11 w-full">
           <div
             data-aos="fade-up"
@@ -215,44 +235,264 @@ export default function Home() {
         </div>
       </section>
       {/* content > skill */}
-      <section
-        data-aos="fade-up"
-        className="hidden min-h-screen bg-transparent"
-      >
+      <section data-aos="fade-up" className="min-h-screen bg-transparent">
+        {/* border */}
         <div className="grid grid-cols-11 w-full">
-          <div className="col bg-red-700 h-3"></div>
-          <div className="col bg-red-600"></div>
-          <div className="col bg-red-500"></div>
-          <div className="col bg-red-400"></div>
-          <div className="col bg-red-300"></div>
-          <div className="col bg-red-200"></div>
-          <div className="col bg-red-300"></div>
-          <div className="col bg-red-400"></div>
-          <div className="col bg-red-500"></div>
-          <div className="col bg-red-600"></div>
-          <div className="col bg-red-700"></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-700 h-3"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-600"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-500"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-400"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-300"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="950"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-200"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-300"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-400"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-500"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-600"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            className="col bg-red-700"
+          ></div>
         </div>
         <div className="m-auto z-20">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16">
-            <h1 className="mb-4 text-3xl font-semibold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl">
-              <div>Skill</div>
+            <h1 className="mb-4 text-3xl font-semibold tracking-wide leading-none text-gray-900 md:text-4xl lg:text-5xl">
+              <div>Skills</div>
             </h1>
             <p className="text-lg font-normal text-gray-600 lg:text-xl sm:px-16 lg:px-48">
-              Skills are always taught and continue to develop.
+              Skills involve coding proficiency and the ability to
+              problem-solve.
             </p>
           </div>
-          <div className="py-8 px-4 mx-auto max-w-screen-xl grid grid-cols-12 gap-6">
-            <div className="col-span-12 lg:col-span-6 rounded-xl shadow border border-gray-200 p-4"></div>
-            <div className="col-span-12 lg:col-span-6 rounded-xl shadow border border-gray-200 p-4"></div>
+          <div className="my-4 mx-4 md:mx-auto py-8 px-4 max-w-screen-lg grid mb-8 border border-gray-200 rounded-xl shadow-sm md:mb-12 md:grid-cols-2">
+            <figure className="flex flex-col p-2 text-center bg-white rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r">
+              <blockquote className="max-w-2xl mx-auto mb-4">
+                <h3 className="text-lg font-semibold">Front End Developer</h3>
+                <div className="my-4 flex flex-wrap justify-center gap-y-2">
+                  {frontendDeveloperSkills.map((item) => {
+                    return (
+                      <span
+                        key={item}
+                        className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+                      >
+                        {item}
+                      </span>
+                    );
+                  })}
+                </div>
+              </blockquote>
+            </figure>
+            <figure className="flex flex-col p-2 text-center bg-white rounded-t-lg md:rounded-t-none md:rounded-tl-lg">
+              <blockquote className="max-w-2xl mx-auto mb-4">
+                <h3 className="text-lg font-semibold">Back End Developer</h3>
+                <div className="my-4 flex flex-wrap justify-center gap-y-2">
+                  {backendDeveloperSkills.map((item) => {
+                    return (
+                      <span
+                        key={item}
+                        className="bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+                      >
+                        {item}
+                      </span>
+                    );
+                  })}
+                </div>
+              </blockquote>
+            </figure>
           </div>
         </div>
       </section>
       {/* content > experience */}
-      <section
-        data-aos="fade-up"
-        className="hidden min-h-screen bg-gray-300 text-xl capitalize"
-      >
-        <div className="m-auto">experience</div>
+      <section data-aos="fade-up" className="min-h-screen bg-transparent">
+        {/* border */}
+        <div className="grid grid-cols-11 w-full">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-700 h-3"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-600"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-500"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-400"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-300"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="950"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-200"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-300"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="850"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-400"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-500"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-600"
+          ></div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-sine"
+            className="col bg-amber-700"
+          ></div>
+        </div>
+        <div className="m-auto z-20">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:pt-16">
+            <h1 className="mb-4 text-3xl font-semibold tracking-wide leading-none text-gray-900 md:text-4xl lg:text-5xl">
+              <div>Experience</div>
+            </h1>
+            <p className="text-lg font-normal text-gray-600 lg:text-xl sm:px-16 lg:px-48">
+              As a developer, I have gained valuable experience in creating and
+              implementing innovative solutions to complex problems.
+            </p>
+          </div>
+          <div className="my-4 mx-4 md:mx-auto py-8 px-8 max-w-screen-lg grid mb-8">
+            <ol className="relative border-l border-gray-200">
+              <li className="mb-10 ml-6">
+                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+                  <svg
+                    aria-hidden="true"
+                    className="w-3 h-3 text-blue-800"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+                  Saka Access Fix as FullStack Engineer
+                  <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3 whitespace-nowrap">
+                    Full-time
+                  </span>
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+                  Jun 2021 to Present
+                </time>
+                <p className="mb-4 text-base font-normal text-gray-500">-</p>
+              </li>
+              <li className="mb-10 ml-6">
+                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+                  <svg
+                    aria-hidden="true"
+                    className="w-3 h-3 text-blue-800"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+                  PT Davidi International as IT Support
+                  <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
+                    Internship
+                  </span>
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+                  April 2019 to August 2019
+                </time>
+                <p className="mb-4 text-base font-normal text-gray-500">-</p>
+              </li>
+            </ol>
+          </div>
+        </div>
       </section>
       {/* content > productivity */}
       <section
