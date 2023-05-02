@@ -315,7 +315,10 @@ export default function Home() {
               problem-solve.
             </p>
           </div>
-          <div className="my-4 mx-4 md:mx-auto py-8 px-4 max-w-screen-lg grid mb-8 border border-gray-200 rounded-xl shadow-sm md:mb-12 md:grid-cols-2">
+          <div
+            data-aos="zoom-in"
+            className="my-4 mx-4 md:mx-auto py-8 px-4 max-w-screen-lg grid mb-8 border border-gray-200 rounded-xl shadow-sm md:mb-12 md:grid-cols-2"
+          >
             <figure className="flex flex-col p-2 text-center bg-white rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r">
               <blockquote className="max-w-2xl mx-auto mb-4">
                 <h3 className="text-lg font-semibold">Front End Developer</h3>
@@ -434,7 +437,10 @@ export default function Home() {
               implementing innovative solutions to complex problems.
             </p>
           </div>
-          <div className="my-4 mx-4 md:mx-auto py-8 px-8 max-w-screen-lg grid mb-8">
+          <div
+            data-aos="fade-up"
+            className="my-4 mx-4 md:mx-auto py-8 px-8 max-w-screen-lg grid mb-8"
+          >
             <ol className="relative border-l border-gray-200">
               <li className="mb-10 ml-6">
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
