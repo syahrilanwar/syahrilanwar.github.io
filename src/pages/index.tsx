@@ -7,6 +7,7 @@ import avatarImage from "public/images/avatar-1.jpg";
 import backgroundPattern1 from "public/images/bg-pattern-2.png";
 import { useEffect } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {
@@ -33,6 +34,9 @@ export default function Home() {
   ];
   return (
     <main className={`min-h-screen over bg-white ` + fontFamily.className}>
+    <Head>
+      <title>Syahril Anwar</title>
+    </Head>
       {/* content > greeting */}
       <section className="min-h-screen flex bg-transparent">
         <div
