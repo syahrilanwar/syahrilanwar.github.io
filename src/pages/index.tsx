@@ -404,9 +404,11 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
   });
-  let date = new Date();
+  let hours = new Date().getHours();
+  const isDay = hours > 5 && hours < 18;
+
   let mode = <></>;
-  if (date.getHours() < 12) {
+  if (isDay == true) {
     mode = (
       <main className={`min-h-screen over bg-white ` + fontFamily.className}>
         <Head>
