@@ -406,6 +406,8 @@ export default function Home() {
   });
   let hours = new Date().getHours();
   const isDay = hours > 5 && hours < 18;
+  console.log(hours, isDay);
+  
 
   let mode = <></>;
   if (isDay == true) {
@@ -657,10 +659,6 @@ export default function Home() {
       </main>
     );
   }
-
-  // if () {
-
-  // }
 
   return mode;
 }
