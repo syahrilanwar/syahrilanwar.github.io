@@ -407,7 +407,6 @@ export default function Home() {
   let hours = new Date().getHours();
   const isDay = hours > 5 && hours < 18;
   console.log(hours, isDay);
-  
 
   let mode = <></>;
   if (isDay == true) {
@@ -534,7 +533,7 @@ export default function Home() {
         </section>
       </main>
     );
-  } else {
+  } else if (isDay == false) {
     mode = (
       <main className={`min-h-screen over bg-black ` + fontFamily.className}>
         <Head>
