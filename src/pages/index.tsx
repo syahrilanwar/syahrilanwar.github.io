@@ -409,7 +409,7 @@ export default function Home() {
   console.log(hours, isDay);
 
   let mode = <></>;
-  if (isDay == true) {
+  if (isDay) {
     mode = (
       <main className={`min-h-screen over bg-white ` + fontFamily.className}>
         <Head>
@@ -533,7 +533,7 @@ export default function Home() {
         </section>
       </main>
     );
-  } else if (isDay == false) {
+  } else {
     mode = (
       <main className={`min-h-screen over bg-black ` + fontFamily.className}>
         <Head>
