@@ -31,13 +31,17 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
-  // console.log(isDay);
+  useEffect(() => {
+    if (isDay) {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  }, [isDay]);
 
   return (
     <main
-      className={`min-h-screen bg-${isDay ? 'white' : 'black'} ${
-        fontFamily.className
-      }`}
+      className={`min-h-screen bg-white dark:bg-black ${fontFamily.className}`}
     >
       <Head>
         <title>Syahril Anwar</title>
@@ -69,16 +73,12 @@ export default function Home() {
               />
             </div>
             <h1
-              className={`mb-4 text-3xl font-semibold tracking-wide leading-none ${
-                isDay ? "text-gray-900" : "text-white"
-              } md:text-4xl lg:text-5xl`}
+              className={`mb-4 text-3xl font-semibold tracking-wide leading-none text-gray-900 dark:text-white md:text-4xl lg:text-5xl`}
             >
               <div>Syahril Anwar {isDay}</div>
             </h1>
             <p
-              className={`mb-8 text-lg font-normal ${
-                isDay ? "text-gray-600" : "text-white"
-              } lg:text-2xl sm:px-16 lg:px-48`}
+              className={`mb-8 text-lg font-normal text-gray-600 dark:text-white lg:text-2xl sm:px-16 lg:px-48`}
             >
               <TypeAnimation
                 sequence={[
