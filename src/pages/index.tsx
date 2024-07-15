@@ -31,9 +31,11 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
+  // console.log(isDay);
+
   return (
     <main
-      className={`min-h-screen bg-${isDay ? "white" : "black"} ${
+      className={`min-h-screen bg-${isDay ? 'white' : 'black'} ${
         fontFamily.className
       }`}
     >
@@ -71,7 +73,7 @@ export default function Home() {
                 isDay ? "text-gray-900" : "text-white"
               } md:text-4xl lg:text-5xl`}
             >
-              <div>Syahril Anwar</div>
+              <div>Syahril Anwar {isDay}</div>
             </h1>
             <p
               className={`mb-8 text-lg font-normal ${
