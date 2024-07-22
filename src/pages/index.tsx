@@ -18,19 +18,15 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
 
-    // Update isDay state based on the current time
     const updateDayNightMode = () => {
       let hours = new Date().getHours();
       setIsDay(hours > 6 && hours < 18);
     };
 
-    // Initial check
     updateDayNightMode();
 
-    // Optional: Set up an interval to update the mode (if needed)
     const intervalId = setInterval(updateDayNightMode, 60000); // Check every minute
 
-    // Clean up interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
@@ -82,38 +78,6 @@ export default function Home() {
         <title>Syahril Anwar</title>
       </Head>
       <section className="min-h-screen flex bg-transparent">
-        {/* <div className="d-flex w-full fixed bottom-0 hidden dark:block">
-          <Image
-            src={sleepCat}
-            width={155}
-            height={155}
-            alt="Avatar"
-            className="mx-auto mb-6"
-          />
-        </div> */}
-        {/* <div
-          className={`bg-repeat bg-fixed h-screen w-full absolute ${
-            isDay ? "" : "bg-opacity-50"
-          }`}
-          style={{
-            backgroundImage: `url(${backgroundPattern1.src})`,
-          }}
-        /> */}
-        {/* <div
-          className={`bg-no-repeat bg-fixed h-screen w-full absolute ${
-            isDay ? "" : "bg-opacity-50"
-          }`}
-          style={{
-            backgroundImage: `url(${backgroundPattern1.src})`,
-          }}
-        />
-        <div
-          className="hidden md:block bg-no-repeat bg-right bg-fixed h-screen w-full absolute"
-          style={{
-            backgroundImage: `url(${backgroundPattern1.src})`,
-          }}
-        /> */}
-
         <div className="m-auto z-20 min-w-full">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <div className="hidden dark:flex invert grayscale py-6 mb-12 max-w-sm mx-auto rounded-lg">
